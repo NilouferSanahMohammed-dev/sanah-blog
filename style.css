@@ -1,15 +1,15 @@
 * { box-sizing: border-box; }
 
 :root {
-  --paper: #f7f2ea;
-  --paper-card: #fffdf8;
+  --paper: #f2e9d8;
+  --paper-card: #f7efe0;
   --ink: #3a2e28;
   --ink-soft: #6e5f56;
-  --plum: #8e5b73;
-  --plum-deep: #6e4257;
+  --plum: #93bfe0;
+  --plum-deep: #5f93c2;
   --sage: #7c8a5e;
   --sage-deep: #5e6a44;
-  --tape: rgba(142, 91, 115, 0.35);
+  --tape: rgba(95, 147, 194, 0.35);
 }
 
 html { scroll-behavior: smooth; }
