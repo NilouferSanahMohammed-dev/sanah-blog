@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>sanah &middot; a little corner of the internet</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Lora:ital,wght@0,400;0,500;1,400&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<nav class="nav">
+  <span class="nav-name">sanah</span>
+  <div class="nav-links">
+    <a href="#about">about</a>
+    <a href="#gallery">pictures</a>
+    <a href="#blog">journal</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero-photo">
+    <div class="polaroid" style="--tilt: -4deg;">
+      <div class="photo-slot" data-placeholder="add hero.jpg to /images"><img src="images/hero.jpg" alt="" onerror="this.style.display='none';this.parentElement.classList.add('empty')" onload="this.parentElement.classList.add('filled')" /></div>
+      <span class="polaroid-caption">hi, it's me</span>
+    </div>
+    <span class="tape tape-1"></span>
+  </div>
+  <div class="hero-text">
+    <p class="hero-eyebrow">welcome to</p>
+    <h1 class="hero-title">Niloufer Sanah Mohammed</h1>
+    <p class="hero-sub">most people just call me Sanah 🤍</p>
+    <p class="hero-blurb">
+      This is my little corner of the internet — part diary, part photo album,
+      part whatever I feel like putting here. Pull up a chair.
+    </p>
+  </div>
+</header>
+
+<section class="section" id="about">
+  <h2 class="section-title">about me</h2>
+  <div class="about-grid">
+    <div class="about-text">
+      <p>
+        I'm Sanah — replace this paragraph with a few lines about who you are,
+        what you love, and what a stranger should know about you after thirty
+        seconds on this page. Keep it in your own voice; that's the whole point
+        of a personal site.
+      </p>
+      <p>
+        A few things I'm into: <em>edit this list in <code>index.html</code></em> —
+        maybe it's a hobby, a favorite place, a comfort show, a thing you're
+        learning. Little details make this page feel like you.
+      </p>
+      <ul class="about-list">
+        <li>currently obsessed with —</li>
+        <li>always down for —</li>
+        <li>you can usually find me —</li>
+      </ul>
+    </div>
+    <div class="polaroid" style="--tilt: 3deg;">
+      <div class="photo-slot" data-placeholder="add about.jpg to /images"><img src="images/about.jpg" alt="" onerror="this.style.display='none';this.parentElement.classList.add('empty')" onload="this.parentElement.classList.add('filled')" /></div>
+      <span class="polaroid-caption">a good day</span>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="gallery">
+  <h2 class="section-title">life, lately</h2>
+  <p class="section-sub">a few pictures — swap these placeholders for your own in <code>/images</code></p>
+  <div class="gallery-grid">
+    <div class="polaroid" style="--tilt: -3deg;">
+      <div class="photo-slot" data-placeholder="add gallery-1.jpg to /images"><img src="images/gallery-1.jpg" alt="" onerror="this.style.display='none';this.parentElement.classList.add('empty')" onload="this.parentElement.classList.add('filled')" /></div>
+      <span class="polaroid-caption">this one</span>
+    </div>
+    <div class="polaroid" style="--tilt: 2deg;">
+      <div class="photo-slot" data-placeholder="add gallery-2.jpg to /images"><img src="images/gallery-2.jpg" alt="" onerror="this.style.display='none';this.parentElement.classList.add('empty')" onload="this.parentElement.classList.add('filled')" /></div>
+      <span class="polaroid-caption">and this</span>
+    </div>
+    <div class="polaroid" style="--tilt: -2deg;">
+      <div class="photo-slot" data-placeholder="add gallery-3.jpg to /images"><img src="images/gallery-3.jpg" alt="" onerror="this.style.display='none';this.parentElement.classList.add('empty')" onload="this.parentElement.classList.add('filled')" /></div>
+      <span class="polaroid-caption">favorite spot</span>
+    </div>
+    <div class="polaroid" style="--tilt: 4deg;">
+      <div class="photo-slot" data-placeholder="add gallery-4.jpg to /images"><img src="images/gallery-4.jpg" alt="" onerror="this.style.display='none';this.parentElement.classList.add('empty')" onload="this.parentElement.classList.add('filled')" /></div>
+      <span class="polaroid-caption">good company</span>
+    </div>
+    <div class="polaroid" style="--tilt: -4deg;">
+      <div class="photo-slot" data-placeholder="add gallery-5.jpg to /images"><img src="images/gallery-5.jpg" alt="" onerror="this.style.display='none';this.parentElement.classList.add('empty')" onload="this.parentElement.classList.add('filled')" /></div>
+      <span class="polaroid-caption">little things</span>
+    </div>
+    <div class="polaroid" style="--tilt: 3deg;">
+      <div class="photo-slot" data-placeholder="add gallery-6.jpg to /images"><img src="images/gallery-6.jpg" alt="" onerror="this.style.display='none';this.parentElement.classList.add('empty')" onload="this.parentElement.classList.add('filled')" /></div>
+      <span class="polaroid-caption">more soon</span>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="blog">
+  <h2 class="section-title">the journal</h2>
+  <p class="section-sub">thoughts, updates, whatever's on my mind</p>
+  <div class="post-list" id="postList"></div>
+</section>
+
+<div class="post-overlay" id="postOverlay">
+  <div class="post-modal">
+    <button class="post-close" id="postClose" aria-label="Close">×</button>
+    <p class="post-date" id="modalDate"></p>
+    <h3 class="post-modal-title" id="modalTitle"></h3>
+    <div class="post-modal-body" id="modalBody"></div>
+  </div>
+</div>
+
+<footer class="footer">
+  <p>made with care by Sanah &middot; <a href="#about">back to top</a></p>
+</footer>
+
+<script src="posts.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
