@@ -58,6 +58,13 @@ Just open `index.html` in a browser. No build tools, no dependencies to install.
 npx serve .
 ```
 
+## How it works, in plain English
+
+- The page loads and reads the list of journal entries from `posts.js`
+- Each entry gets turned into a card in the journal list, newest wherever you put it in the array
+- Click a card and it opens the full entry in a pop-up, no page reload
+- Each photo spot checks if a matching file exists in `/images`. Found it, show it. Didn't, show a soft placeholder telling you what filename it's expecting
+
 ## Notes on the design
 
 - Fonts: Caveat (the handwritten one) for names and headings, Lora for the journal and reading text, Nunito for small UI labels. Three fonts doing three different jobs on purpose.
